@@ -8,7 +8,6 @@ class PhlatController {
 	// output buffer
 	private $buffer;
 
-
 	public function __contruct() {
 
 		$imported_files = [];
@@ -26,7 +25,4 @@ class PhlatController {
 	}	
 
 	// $content = file_get_contents($start_file);
-
-
-
 }
