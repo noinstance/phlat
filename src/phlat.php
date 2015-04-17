@@ -20,15 +20,6 @@ try {
 	Logger::log('Error: parameters missing');
 }
 
-// files already imported
-$imported_files = [];
-
-// output buffer
-$buffer = '';
-
-// get first file
-$content = file_get_contents($start_file);
-
-$content = str_replace('<?php', '', $content);
-$content = str_replace('?>', '', $content);
+$phlat = new PhlatController();
+$phlat->process($start_file);
 
